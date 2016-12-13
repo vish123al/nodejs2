@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<!-- Loading the AngularJS file from /public/angularJS folder -->
+<script src="angularjs/calculate.js"></script>
+</head>
+<body ng-app="onlineCalculator">
+	<div ng-controller="calc">
+		<nav class="navbar navbar-inverse text-center" style="margin-bottom:0px">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			</div>
+			<div class="text-center text-white text-size-40"><%= title %></div>
+		</div>
+	</nav>
+
+	<div id="myCarousel" class="container-fluid aw-bg">
+		<div class="row text-center">
+			<br>
+			<div class="col-md-4"></div>
+			<div class="col-md-4 vid-bg">
+				<br>
+				
+				<div class="row">
+					<div class="col-sm-1"></div>
+
+					<div class="col-sm-10 text-left">
+						<br>
+
+						<div class="row">
+							<div class="col-sm-12 result-display">
+								<span id="x">{{output}}</span>
+								<hr>
+							</div>
+						</div>
+						<div class="row btnGrid">
+							<br>
+							<div class="col-sm-6">
+								<button type="button" class="btn-custom btn btn-warning" ng-click="reset()">AC</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-warning" ng-click="clearLast()">C</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn btn-danger" ng-click="division()">/</button>
+							</div>
+						</div>
+						
+						<div class="row btnGrid">
+							<br>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('7')">7</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('8')">8</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('9')">9</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn btn-danger" ng-click="multiply()">X</button>
+							</div>
+						</div>
+						
+						<div class="row btnGrid">
+							<br>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('4')">4</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('5')">5</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('6')">6</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn btn-danger" ng-click="subtract()">-</button>
+							</div>
+						</div>
+						
+						<div class="row btnGrid">
+							<br>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('1')">1</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('2')">2</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('3')">3</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn btn-danger" ng-click="add()">+</button>
+							</div>
+						</div>
+						
+						<div class="row btnGrid padding-bottom-25">
+							<br>
+							<div class="col-sm-6">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('0')">0</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-secondary" ng-click="updateScreen('.')">.</button>
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn-custom btn btn-warning" ng-click="compute()">=</button>
+							</div>
+						</div>
+
+						<br>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				<br>
+
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<br>
+	</div>
+
+	<footer class="container-fluid text-center">
+		<p>Powered By Bootstrap</p>
+	</footer>
+	</div>
+
+</body>
+</html>

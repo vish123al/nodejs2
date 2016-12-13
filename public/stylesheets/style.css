@@ -1,0 +1,88 @@
+body {
+  //padding: 50px;
+  //font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.btn-custom{
+	width:100%;
+	font-size: 25px !important;
+	}
+
+.btn:hover{
+	background-color: gray;
+}
+
+.padding-bottom-25{
+	padding-bottom: 25px;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.result-display{
+	height: 100px;
+	background-color: #000000;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	padding-top: 20px;
+	font-size: 2em;
+	color:white;
+	white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+.btnGrid{
+	background-color: #c0c0c0;
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #333;
+      color:#FFFFFF;
+      padding: 25px;
+    }
+
+  .aw-bg{
+  	background-image: url("calc.jpg");
+  	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:800px;
+  }
+  .text-red{
+  	color: #e60000;
+  }
+  
+   .text-white{
+  	color: #FFFFFF;
+  }
+  
+   .vid-bg{
+  	background: rgba(0, 0, 0, 0) linear-gradient(rgba(1, 0, 0, 0.6), rgba(1, 0, 0, 0.6)) repeat scroll 0 0;
+  	height: 550px;
+  }
+  
+    .text-size-40{
+  	font-size: 40px;
+  }
+  
+    h4{
+  	color:#e60000;
+  }
+  
+  label {
+	color: #ff6666;
+	font-weight: bold;
+	display: block;
+	font-size: 17px;
+	float: left;
+  }
